@@ -13,10 +13,13 @@ Make sure you have Python installed on your machine. This app uses built-in Pyth
 
 <code>git clone https://github.com/AshenVoid/AppShowcasePython.git</code>
 <code>cd AppShowcasePython</code>
+
 2. Run the Application
 - Windows: <code>python shopping_list.py</code>
 - Mac: <code>python3 shopping_list.py</code>
+
 3. The application window will open, and you can start managing your shopping list.
+
 ## GUI Instructions
 ### Adding Items:
 - Enter the item name in the input field.
