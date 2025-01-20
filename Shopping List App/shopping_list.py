@@ -1,8 +1,8 @@
 import tkinter as tk
 from tkinter import messagebox, filedialog
+#from typing import BinaryIO
 import csv
 import pickle
-
 
 class ListApp:
     def __init__(self, root):
@@ -12,7 +12,7 @@ class ListApp:
 
     #GUI
         #INPUT
-        self.entry = tk.Entry(root, width=40)
+        self.entry = tk.Entry(root, width = 32)
         self.entry.grid(row = 0, column = 0, padx = 10, pady = 10)
 
         #ADD
@@ -20,8 +20,8 @@ class ListApp:
         self.add_button.grid(row = 0, column = 1, padx = 10, pady = 10)
 
         #LIST
-        self.listbox = tk.Listbox(root, width=50, height=15)
-        self.listbox.grid(row=1, column=0, columnspan=2, padx=10, pady=10)
+        self.listbox = tk.Listbox(root, width = 50, height = 15)
+        self.listbox.grid(row=1, column = 0, columnspan = 2, padx = 10, pady = 10)
 
         #EDIT
         self.edit_button = tk.Button(root, text="Edit item", command= self.edit_item)
@@ -41,11 +41,11 @@ class ListApp:
 
         #SAVE_PICKLE
         self.save_pickle_button = tk.Button(root, text="Save to Pickle", command=self.save_pickle)
-        self.save_pickle_button.grid(row=4, column=0, pady=10)
+        self.save_pickle_button.grid(row = 4, column = 0, pady = 10)
 
         #LOAD_PICKLE
         self.load_pickle_button = tk.Button(root, text="Load from Pickle", command=self.load_pickle)
-        self.load_pickle_button.grid(row=4, column=1, pady=10)
+        self.load_pickle_button.grid(row = 4, column = 1, pady = 10)
 
         #SAVE_JSON
 
@@ -107,6 +107,7 @@ class ListApp:
         file = filedialog.asksaveasfilename(defaultextension=".pkl", filetypes=[("Pickle", "*.pkl")])
         if file:
             with open(file, "wb") as f:
+                #f : BinaryIO
                 pickle.dump(self.list, f)
             messagebox.showinfo("Saved", "List has been saved to Pickle file.")
 
