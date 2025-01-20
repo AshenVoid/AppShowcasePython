@@ -3,7 +3,7 @@
 
 - 🔭 I’m currently doing a **Python course**
 
-- 🌱 I’m currently learning OOP **SDA Academy**
+- 🌱 I’m currently learning Python at **SDA Academy**
 
 - 👨‍💻 All of my projects are available at [https://github.com/AshenVoid/AppShowcasePython](https://github.com/AshenVoid/AppShowcasePython)
 
@@ -13,6 +13,7 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
+  Discord: ashenvoid_
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
